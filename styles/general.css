@@ -1,0 +1,97 @@
+:root {
+    --black: #001C1C;
+	--header_logo: #023131;
+	--tab_active: #3C5858;
+	--gray: #607282;
+	--gray_light: #e3e3e3;
+	--blue: #248888;
+	--blue_light:#bedada;
+	--blue_dg: #F0F6F6;
+	--aside_btn: #5e9cff;
+	--red: #FF2E4C;
+	--red_hover: #ff7288;
+	--red_light: #FFEDEF;
+}
+
+::-webkit-scrollbar {
+	width: 16px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-button {
+	background: #f1f1f1;
+	height: 4px;
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+	width: 10px;
+	background: #888;
+	border-radius: 20px;
+	border: 4px solid #f1f1f1;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: var(--blue); 
+}
+
+::selection{
+    background-color: var(--blue);
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Play', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+	color: var(--black);
+
+	&.no_scroll {
+		overflow: hidden;
+	}
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+		&.fullwidth {
+			width: 100%;
+		}
+	}
+}

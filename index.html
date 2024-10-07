@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое</title>
+    <!-- Иконка -->
+    <link rel="icon" href="images/favicon.svg">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Статические стили -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/general.css">
+
+    <!-- Header -->
+    <link rel="stylesheet" href="styles/header.css">
+    <!-- Aside -->
+    <link rel="stylesheet" href="styles/aside.css">
+    <!-- Main -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="header-logo">Logo</a>
+
+                <nav class="header-nav" id="nav_menu">
+                    <ul class="header-links-wrapper">
+                        <li class="header-link">
+                            <a href="#">Все предложения</a>
+                        </li>
+                        <li class="header-link">
+                            <a href="#">Скидки</a>
+                        </li>
+                        <li class="header-link">
+                            <a href="#">Акции</a>
+                        </li>
+                        <li class="header-link">
+                            <a href="#">Промокоды</a>
+                        </li>
+                        <li class="header-link">
+                            <a href="#">Кешбэк</a>
+                        </li>
+                        <li class="header-link btn">
+                            <button class="header-btn">Добавить скидку</button>
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="header-tools" id="header_tools">
+                    <li class="header-tool">
+                        <img src="images/icon-search.svg" alt="">
+                    </li>
+                    <li class="header-tool">
+                        <img src="images/icon-tg.svg" alt="">
+                    </li>
+                    <li class="header-tool">
+                        <img src="images/icon-login.svg" alt="">
+                    </li>
+                    <li class="header-tool">
+                        Ру
+                    </li>
+                </ul>
+
+                <button class="header-btn">Добавить скидку</button>
+
+                <div class="burger-menu" id="burger_menu">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="main-inner">
+                <aside class="aside">
+                    <h1 class="aside-title">Скидки дня</h1>
+                    <h2 class="aside-subtitle">23 предложения</h2>
+                    <ul class="cards-wrapper">
+                        <li class="card">
+                            <a href="#" class="all-card-link"></a>
+                            <div class="photo-wrapper">
+                                <div class="date">До 29 февраля</div>
+                                <img class="card-photo" src="images/content/brand_01.jpg" alt="" >
+                            </div>
+                            <div class="card-info">
+                                <div class="card-texts">
+                                    <a href="brand" class="card-brand">Korzinka.uz</a>
+                                    <h3 class="card-title">В четверг скидки на рыбу</h3>
+                                </div>
+                                <div class="discounts">
+                                    <a href="discount" class="discount-type">Скидки</a>
+                                    <div class="cashback-value">
+                                        <p class="cashback">Кешбэк</p>
+                                        <p class="discount-value">3%</p>
+                                    </div>
+                                </div>
+                                <p class="brand-description">Супермаркеты</p>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <a href="#" class="all-card-link"></a>
+                            <div class="photo-wrapper">
+                                <div class="date timer" data-time="24"></div>
+                                <img class="card-photo" src="images/content/brand_02.jpg" alt="" >
+                            </div>
+                            <div class="card-info">
+                                <div class="card-texts">
+                                    <a href="brand" class="card-brand">MANGO</a>
+                                    <h3 class="card-title">Акция 1+1</h3>
+                                </div>
+                                <div class="discounts">
+                                    <a href="discount" class="discount-type">Скидки</a>
+                                    <div class="cashback-value">
+                                        <p class="cashback">Кешбэк</p>
+                                        <p class="discount-value">3%</p>
+                                    </div>
+                                </div>
+                                <p class="brand-description">Магазины брендовой одежды</p>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <a href="#" class="all-card-link"></a>
+                            <div class="photo-wrapper">
+                                <img class="card-photo" src="images/content/brand_03.jpg" alt="" >
+                            </div>
+                            <div class="card-info">
+                                <div class="card-texts">
+                                    <a href="brand" class="card-brand">TEXNOMART</a>
+                                    <h3 class="card-title">До — 60% на бытовую технику в ТЦ «Samarkand Darvoza»</h3>
+                                </div>
+                                <div class="discounts">
+                                    <a href="discount" class="discount-type">Скидки</a>
+                                    <div class="cashback-value">
+                                        <p class="cashback">Кешбэк</p>
+                                        <p class="discount-value">3%</p>
+                                    </div>
+                                </div>
+                                <p class="brand-description">Магазины электроники и бытовой техники</p>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <a href="#" class="all-card-link"></a>
+                            <div class="photo-wrapper">
+                                <img class="card-photo" src="images/content/brand_04.jpg" alt="" >
+                            </div>
+                            <div class="card-info">
+                                <div class="card-texts">
+                                    <a href="brand" class="card-brand">Makro</a>
+                                    <h3 class="card-title">При покупке CIF пачка губок Salixan БЕСПЛАТНО</h3>
+                                </div>
+                                <div class="discounts">
+                                    <a href="discount" class="discount-type">Скидки</a>
+                                    <div class="cashback-value">
+                                        <p class="cashback">Кешбэк</p>
+                                        <p class="discount-value">3%</p>
+                                    </div>
+                                </div>
+                                <p class="brand-description">Супермаркеты</p>
+                            </div>
+                        </li>
+                        <li class="card hidden">
+                            <a href="#" class="all-card-link"></a>
+                            <div class="photo-wrapper">
+                                <div class="date">До 29 февраля</div>
+                                <img class="card-photo" src="images/content/brand_01.jpg" alt="" >
+                            </div>
+                            <div class="card-info">
+                                <div class="card-texts">
+                                    <a href="brand" class="card-brand">Makro</a>
+                                    <h3 class="card-title">В четверг скидки на рыбу</h3>
+                                </div>
+                                <div class="discounts">
+                                    <a href="discount" class="discount-type">Скидки</a>
+                                    <div class="cashback-value">
+                                        <p class="cashback">Кешбэк</p>
+                                        <p class="discount-value">3%</p>
+                                    </div>
+                                </div>
+                                <p class="brand-description">Супермаркеты</p>
+                            </div>
+                        </li>
+                        <li class="card hidden">
+                            <a href="#" class="all-card-link"></a>
+                            <div class="photo-wrapper">
+                                <div class="date">До 29 февраля</div>
+                                <img class="card-photo" src="images/content/brand_01.jpg" alt="" >
+                            </div>
+                            <div class="card-info">
+                                <div class="card-texts">
+                                    <a href="brand" class="card-brand">Makro</a>
+                                    <h3 class="card-title">В четверг скидки на рыбу</h3>
+                                </div>
+                                <div class="discounts">
+                                    <a href="discount" class="discount-type">Скидки</a>
+                                    <div class="cashback-value">
+                                        <p class="cashback">Кешбэк</p>
+                                        <p class="discount-value">3%</p>
+                                    </div>
+                                </div>
+                                <p class="brand-description">Супермаркеты</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="aside-btn" id="show-cards-btn"></button>
+                </aside>
+
+                <div class="inner-content">
+                    <div class="content-block bg">
+                        <h1 class="content-block-title blue">Топовые скидки</h1>
+
+                        <ul class="tab-menu">
+                            <li class="tab-menu-item active">Питание</li>
+                            <li class="tab-menu-item">Связь</li>
+                            <li class="tab-menu-item">Магазины</li>
+                        </ul>
+
+                        <ul class="tabs-wrapper">
+                            <!-- Tab #1 -->
+                            <li class="tab-content active">
+                                <div class="swiper main-slider" id="slider-1">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide slide-card">
+                                            <a href="#" class="all-card-link"></a>
+                                            <div class="photo-wrapper">
+                                                <div class="date">До 29 февраля</div>
+                                                <img class="card-photo" src="images/content/brand_05.jpg" alt="" >
+                                            </div>
+                                            <div class="card-info">
+                                                <div class="card-texts">
+                                                    <a href="brand" class="card-brand">Gosty</a>
+                                                    <h3 class="card-title">Каждый вторник — 20% на все меню</h3>
+                                                </div>
+                                                <div class="discounts">
+                                                    <a href="discount" class="discount-type">Скидки</a>
+                                                    <div class="cashback-value">
+                                                        <p class="cashback">Кешбэк</p>
+                                                        <p class="discount-value">3%</p>
+                                                    </div>
+                                                </div>
+                                                <p class="brand-description">Супермаркеты</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide slide-card">
+                                            <a href="#" class="all-card-link"></a>
+                                            <div class="photo-wrapper">
+                                                <div class="date timer" data-time="72"></div>
+                                                <img class="card-photo" src="images/content/brand_06.jpg" alt="" >
+                                            </div>
+                                            <div class="card-info">
+                                                <div class="card-texts">
+                                                    <a href="brand" class="card-brand">Shosh</a>
+                                                    <h3 class="card-title">Скидки на еду и напитки</h3>
+                                                </div>
+                                                <div class="discounts">
+                                                    <a href="discount" class="discount-type">Скидки</a>
+                                                    <div class="cashback-value">
+                                                        <p class="cashback">Кешбэк</p>
+                                                        <p class="discount-value">3%</p>
+                                                    </div>
+                                                </div>
+                                                <p class="brand-description">Супермаркеты</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide slide-card">
+                                            <a href="#" class="all-card-link"></a>
+                                            <div class="photo-wrapper">
+                                                <div class="date timer" data-time="36"></div>
+                                                <img class="card-photo" src="images/content/brand_07.jpg" alt="" >
+                                            </div>
+                                            <div class="card-info">
+                                                <div class="card-texts">
+                                                    <a href="brand" class="card-brand">Petrovich</a>
+                                                    <h3 class="card-title">Ланч по выгодной цене и 2% кешбэк по промокоду</h3>
+                                                </div>
+                                                <div class="discounts">
+                                                    <a href="discount" class="discount-type">Скидки</a>
+                                                    <div class="cashback-value">
+                                                        <p class="cashback">Кешбэк</p>
+                                                        <p class="discount-value">3%</p>
+                                                    </div>
+                                                </div>
+                                                <p class="brand-description">Супермаркеты</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide slide-card">
+                                            <a href="#" class="all-card-link"></a>
+                                            <div class="photo-wrapper">
+                                                <div class="date">До 29 февраля</div>
+                                                <img class="card-photo" src="images/content/brand_02.jpg" alt="" >
+                                            </div>
+                                            <div class="card-info">
+                                                <div class="card-texts">
+                                                    <a href="brand" class="card-brand">MANGO</a>
+                                                    <h3 class="card-title">Акция 1+1</h3>
+                                                </div>
+                                                <div class="discounts">
+                                                    <a href="discount" class="discount-type">Скидки</a>
+                                                    <div class="cashback-value">
+                                                        <p class="cashback">Кешбэк</p>
+                                                        <p class="discount-value">3%</p>
+                                                    </div>
+                                                </div>
+                                                <p class="brand-description">Супермаркеты</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </li>
+
+                            <!-- Tab #2 -->
+                            <li class="tab-content">
+                                <div class="swiper main-slider" id="slider-2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide slide-card">
+                                            <a href="#" class="all-card-link"></a>
+                                            <div class="photo-wrapper">
+                                                <div class="date">До 29 февраля</div>
+                                                <img class="card-photo" src="images/content/brand_01.jpg" alt="" >
+                                            </div>
+                                            <div class="card-info">
+                                                <div class="card-texts">
+                                                    <a href="brand" class="card-brand">Korzinka.uz</a>
+                                                    <h3 class="card-title">В четверг скидки на рыбу</h3>
+                                                </div>
+                                                <div class="discounts">
+                                                    <a href="discount" class="discount-type">Скидки</a>
+                                                    <div class="cashback-value">
+                                                        <p class="cashback">Кешбэк</p>
+                                                        <p class="discount-value">3%</p>
+                                                    </div>
+                                                </div>
+                                                <p class="brand-description">Супермаркеты</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide slide-card">
+                                            <a href="#" class="all-card-link"></a>
+                                            <div class="photo-wrapper">
+                                                <div class="date timer" data-time="72"></div>
+                                                <img class="card-photo" src="images/content/brand_06.jpg" alt="" >
+                                            </div>
+                                            <div class="card-info">
+                                                <div class="card-texts">
+                                                    <a href="brand" class="card-brand">Shosh</a>
+                                                    <h3 class="card-title">Скидки на еду и напитки</h3>
+                                                </div>
+                                                <div class="discounts">
+                                                    <a href="discount" class="discount-type">Скидки</a>
+                                                    <div class="cashback-value">
+                                                        <p class="cashback">Кешбэк</p>
+                                                        <p class="discount-value">3%</p>
+                                                    </div>
+                                                </div>
+                                                <p class="brand-description">Супермаркеты</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide slide-card">
+                                            <a href="#" class="all-card-link"></a>
+                                            <div class="photo-wrapper">
+                                                <div class="date timer" data-time="36"></div>
+                                                <img class="card-photo" src="images/content/brand_07.jpg" alt="" >
+                                            </div>
+                                            <div class="card-info">
+                                                <div class="card-texts">
+                                                    <a href="brand" class="card-brand">Petrovich</a>
+                                                    <h3 class="card-title">Ланч по выгодной цене и 2% кешбэк по промокоду</h3>
+                                                </div>
+                                                <div class="discounts">
+                                                    <a href="discount" class="discount-type">Скидки</a>
+                                                    <div class="cashback-value">
+                                                        <p class="cashback">Кешбэк</p>
+                                                        <p class="discount-value">3%</p>
+                                                    </div>
+                                                </div>
+                                                <p class="brand-description">Супермаркеты</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide slide-card">
+                                            <a href="#" class="all-card-link"></a>
+                                            <div class="photo-wrapper">
+                                                <div class="date">До 29 февраля</div>
+                                                <img class="card-photo" src="images/content/brand_02.jpg" alt="" >
+                                            </div>
+                                            <div class="card-info">
+                                                <div class="card-texts">
+                                                    <a href="brand" class="card-brand">MANGO</a>
+                                                    <h3 class="card-title">Акция 1+1</h3>
+                                                </div>
+                                                <div class="discounts">
+                                                    <a href="discount" class="discount-type">Скидки</a>
+                                                    <div class="cashback-value">
+                                                        <p class="cashback">Кешбэк</p>
+                                                        <p class="discount-value">3%</p>
+                                                    </div>
+                                                </div>
+                                                <p class="brand-description">Супермаркеты</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </li>
+
+                            <!-- Tab #3 -->
+                            <li class="tab-content">
+                                <div class="swiper main-slider" id="slider-3">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide slide-card">
+                                            <a href="#" class="all-card-link"></a>
+                                            <div class="photo-wrapper">
+                                                <div class="date">До 29 февраля</div>
+                                                <img class="card-photo" src="images/content/brand_03.jpg" alt="" >
+                                            </div>
+                                            <div class="card-info">
+                                                <div class="card-texts">
+                                                    <a href="brand" class="card-brand">TEXNOMART</a>
+                                                    <h3 class="card-title">До — 60% на бытовую технику в ТЦ «Samarkand Darvoza»</h3>
+                                                </div>
+                                                <div class="discounts">
+                                                    <a href="discount" class="discount-type">Скидки</a>
+                                                    <div class="cashback-value">
+                                                        <p class="cashback">Кешбэк</p>
+                                                        <p class="discount-value">3%</p>
+                                                    </div>
+                                                </div>
+                                                <p class="brand-description">Супермаркеты</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide slide-card">
+                                            <a href="#" class="all-card-link"></a>
+                                            <div class="photo-wrapper">
+                                                <div class="date timer" data-time="72"></div>
+                                                <img class="card-photo" src="images/content/brand_06.jpg" alt="" >
+                                            </div>
+                                            <div class="card-info">
+                                                <div class="card-texts">
+                                                    <a href="brand" class="card-brand">Shosh</a>
+                                                    <h3 class="card-title">Скидки на еду и напитки</h3>
+                                                </div>
+                                                <div class="discounts">
+                                                    <a href="discount" class="discount-type">Скидки</a>
+                                                    <div class="cashback-value">
+                                                        <p class="cashback">Кешбэк</p>
+                                                        <p class="discount-value">3%</p>
+                                                    </div>
+                                                </div>
+                                                <p class="brand-description">Супермаркеты</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide slide-card">
+                                            <a href="#" class="all-card-link"></a>
+                                            <div class="photo-wrapper">
+                                                <div class="date timer" data-time="36"></div>
+                                                <img class="card-photo" src="images/content/brand_07.jpg" alt="" >
+                                            </div>
+                                            <div class="card-info">
+                                                <div class="card-texts">
+                                                    <a href="brand" class="card-brand">Petrovich</a>
+                                                    <h3 class="card-title">Ланч по выгодной цене и 2% кешбэк по промокоду</h3>
+                                                </div>
+                                                <div class="discounts">
+                                                    <a href="discount" class="discount-type">Скидки</a>
+                                                    <div class="cashback-value">
+                                                        <p class="cashback">Кешбэк</p>
+                                                        <p class="discount-value">3%</p>
+                                                    </div>
+                                                </div>
+                                                <p class="brand-description">Супермаркеты</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide slide-card">
+                                            <a href="#" class="all-card-link"></a>
+                                            <div class="photo-wrapper">
+                                                <div class="date">До 29 февраля</div>
+                                                <img class="card-photo" src="images/content/brand_02.jpg" alt="" >
+                                            </div>
+                                            <div class="card-info">
+                                                <div class="card-texts">
+                                                    <a href="brand" class="card-brand">MANGO</a>
+                                                    <h3 class="card-title">Акция 1+1</h3>
+                                                </div>
+                                                <div class="discounts">
+                                                    <a href="discount" class="discount-type">Скидки</a>
+                                                    <div class="cashback-value">
+                                                        <p class="cashback">Кешбэк</p>
+                                                        <p class="discount-value">3%</p>
+                                                    </div>
+                                                </div>
+                                                <p class="brand-description">Супермаркеты</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </li>
+
+                            <div class="slider-btn-prev"></div>
+                            <div class="slider-btn-next"></div>
+                        </ul>
+                    </div>
+
+                    <div class="content-block">
+                        <h2 class="welcome-title">Добро пожаловать на сайт</h2>
+                        <h3 class="welcom-subtitle">Ваш надёжный помощник в поиске лучших скидок и акций различных компаний!</h3>
+                        <p class="welcome-paragraph opened">
+                            Мы собрали для вас все самые выгодные предложения, чтобы вы могли сэкономить свои деньги и получить максимум удовольствия от покупок.
+                        </p>
+                        <p class="show-text" id="show-text">Развернуть текст</p>
+                        <div class="hidden-text" id="hidden-text">
+                            <div class="text-wrapper">
+                                <p class="welcome-paragraph">
+                                    Мы собрали для вас все самые выгодные предложения, чтобы вы могли сэкономить свои деньги и получить максимум удовольствия от покупок.
+                                </p>
+                                <p class="welcome-paragraph">
+                                    Мы собрали для вас все самые выгодные предложения, чтобы вы могли сэкономить свои деньги и получить максимум удовольствия от покупок.
+                                </p>
+                                <p class="welcome-paragraph">
+                                    Мы собрали для вас все самые выгодные предложения, чтобы вы могли сэкономить свои деньги и получить максимум удовольствия от покупок.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <h1 class="content-block-title black">FAQ</h1>
+
+                        <ul class="faq-wrapper">
+                            <li class="question">
+                                <div class="title-wrapper">
+                                    <h3 class="question-title">Какие компании представлены на сайте?</h3>
+                                    <svg class="question-icon-img" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 16H32" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M16 32L16 0" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <div class="detail">
+                                    <div class="detail-inner">
+                                        <ul class="answer-wrapper">
+                                            <li class="answer">Чтобы быть в курсе новых скидок и акций на сайте, вы можете подписаться на наш <a href="#">телеграм-канал</a> или следить за новостями.</li>
+                                            <li class="answer">Мы регулярно отправляем информацию о новых предложениях и акциях нашим подписчикам, чтобы они всегда могли быть в курсе последних скидок и эксклюзивных предложений.</li>
+                                            <li class="answer">Также можно регулярно посещать сайт и проверять разделы с акциями и скидками.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="question">
+                                <div class="title-wrapper">
+                                    <h3 class="question-title">Как я могу быть в курсе новых скидок и акций на сайте?</h3>
+                                    <svg class="question-icon-img" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 16H32" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M16 32L16 0" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <div class="detail">
+                                    <div class="detail-inner">
+                                        <ul class="answer-wrapper">
+                                            <li class="answer">Чтобы быть в курсе новых скидок и акций на сайте, вы можете подписаться на наш <a href="#">телеграм-канал</a> или следить за новостями.</li>
+                                            <li class="answer">Мы регулярно отправляем информацию о новых предложениях и акциях нашим подписчикам, чтобы они всегда могли быть в курсе последних скидок и эксклюзивных предложений.</li>
+                                            <li class="answer">Также можно регулярно посещать сайт и проверять разделы с акциями и скидками.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="scripts/header.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/slider.js"></script>
+
+    <script src="scripts/tabs.js"></script>
+    <script src="scripts/timers.js"></script>
+    <script src="scripts/detail.js"></script>
+    <script src="scripts/cards.js"></script>
+</body>
+</html>
